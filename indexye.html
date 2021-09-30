@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>ye, gimme a sign!</h1>
+<!-- this is just the header -->
+<div>
+
+</div>
+<p>share ye' wisdom</p>
+<!-- this should be a hyperlink (or a pic named image0.png) to a folder /images/ that displays a random image from that folder. all the pics have name "image_.png" where "_" is a number and i have 3 test images right now, since i have not got around to making graphics yet-->
+<div>
+    
+<!--  i tried to use <img src="/images/image_<?png $random = rand(1,3); echo $random; ?>.png" code from here https://stackoverflow.com/questions/4478783/select-random-file-from-directory but i don't think it works. oh it's php, not html lol -->
+
+<!-- oh i found another tutorial from here https://stackoverflow.com/questions/50013591/random-image-on-html-refresh, testing now -->
+
+<head>
+    <script src=></script>
+    
+    </head>
+    
+    <div id="images"> </div>
+    <script> 
+    var images = ['image1.png', 'image2.png', 'image3.png'];
+     
+    $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#images');
+    </script>
+
+<!-- ooops, still don't know how to do it. oh wait, is this a javascript thing? -->
+
+<!-- i'll try another one. btw my code is so many lines already, but zero functionality :D does this happen to you too? -->
+
+<html>
+<head>
+    <title>Refresh for image!</title>
+</head>
+<body>
+    <script type="text/javascript">
+ var imlocation = "images/";
+ var currentdate = 0;
+ var image_number = 0;
+ function ImageArray (n) {
+   this.length = n;
+   for (var i =1; i <= n; i++) {
+     this[i] = ' '
+   }
+ }
+ image = new ImageArray(13)
+ image[0] = 'image0.png'
+ image[1] = 'image1.png'
+ image[2] = 'image2.png'
+ image[3] = 'image3.png'
+
+ var rand = 60/image.length
+ function randomimage() {
+    currentdate = new Date()
+    image_number = currentdate.getSeconds()
+    image_number = Math.floor(image_number/rand)
+    return(image[image_number])
+ }
+ document.write("<img src='" + imlocation + randomimage()+ "'>");
+
+</script>
+</body>
+</html>
+
+<!-- umm, that's all for now i guess, gotta learn js first -->
+</div>
+</body>
+</html>
