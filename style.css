@@ -1,0 +1,46 @@
+.header {
+  height: 200px;
+  display:block;
+  }
+.header a {
+text-align: left;
+font-size: 25px;
+text-decoration: none;
+color:#FFF;
+padding:10px;
+/*
+background-color:rgb(236, 74, 128); */
+}
+
+.header a:hover {
+  text-align: left;
+  font-size: 25px;
+  text-decoration: none;
+  background-color:transparent;
+  }
+
+  h1 {  
+    color:#FFF;
+  }
+
+  h6 {  
+    color:#FFF;
+    font-size: 35px;
+    text-align: right;
+  }
+
+.heading {
+  background-color:#FFF;
+  color:red;
+}
+
+.randomtext {
+  width:100%;
+  font-family: 'Gloria Hallelujah', cursive;
+  height: 200px;
+  color:#FFF;
+  font-size: 52px;
+  line-height: 110%;
+  text-align: center;
+  padding: 150px;
+}
